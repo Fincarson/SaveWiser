@@ -1,0 +1,45 @@
+# Root .gitignore for the SaveWiserApp repository.
+# Flutter/Dart build artifacts are ignored in savewiser/.gitignore.
+
+# --- Operating system files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Editors / IDEs ---
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+# --- Logs & temp ---
+*.log
+*.tmp
+tmp/
+
+# --- Secrets: never commit API keys, keystores, or signing config ---
+# The OpenRouter key is passed at build time via --dart-define (see README).
+*.env
+.env.*
+*.keystore
+*.jks
+key.properties
+**/android/key.properties
+
+# --- Node (only used for local tooling/scripts, not shipped) ---
+node_modules/
+
+# --- Knowledge-graph / analysis output (if generated locally) ---
+graphify-out/

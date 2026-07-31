@@ -16,7 +16,7 @@ final Map<String, String> faqContents = {
   "How is my daily spending calculated?":
       " It is based on your income, expenses, and saving goals. The app uses budgeting rules, specifically the 50-30-20 rule to split your money into needs, wants, and savings. ",
   "What is the savings goal?":
-      "It’s the monthly amount you want to save — you set this during setup.",
+      "It’s the monthly amount you want to save - you set this during setup.",
   "What happens if I overspend for the day?":
       "You’ll get a warning and adjusted limits for the rest of the week. This prevents you from building a habit of overspending and helps you stay on track monthly.",
   "Can I change my financial goals later?":

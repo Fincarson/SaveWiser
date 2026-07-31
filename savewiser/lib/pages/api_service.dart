@@ -1,9 +1,14 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
+/// Requests short, actionable savings advice from OpenRouter.
+///
+/// The API key is supplied at build/run time and must never be committed:
+///   flutter run --dart-define=OPENROUTER_API_KEY=your_key_here
+/// Grab a free key at https://openrouter.ai/keys
 class ApiService {
   static const _baseUrl = 'https://openrouter.ai/api/v1/chat/completions';
-  static const _apiKey = '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';
+  static const _apiKey = String.fromEnvironment('OPENROUTER_API_KEY');
 
   Future<http.Response> fetchAdvice(double moneySaved, String goalDate, double pace, String goal) {
     final int currentYear = DateTime.now().year;

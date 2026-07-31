@@ -142,7 +142,7 @@ class _UpdateProfilePageState extends State<UpdateProfilePage> {
     await prefs.setString('purpose', _targetCtrl.text.trim());
 
     if (!mounted) return;
-    Navigator.pop(context); // 👈 Return to previous screen
+    Navigator.pop(context);
   }
 
   @override

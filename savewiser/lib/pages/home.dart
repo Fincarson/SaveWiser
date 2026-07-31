@@ -290,7 +290,7 @@ class _HomePageState extends State<HomePage> {
                 ),
 
                 child: Text(
-                  'Welcome Back $_name (SW107788)',
+                  'Welcome Back $_name',
                   style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,

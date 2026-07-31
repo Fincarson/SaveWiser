@@ -1,12 +1,7 @@
-// File: lib/screens/setup_page.dart
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-// import 'main_nav.dart';
 import 'pages/spending_tracker.dart';
 import 'services/notification_schedule.dart';
-// File: lib/screens/setup_page.dart
-// ————————————— add this above your `class SetupStep1` —————————————
-
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 import 'package:table_calendar/table_calendar.dart';
@@ -890,12 +885,6 @@ class _SetupStep2State extends State<SetupStep2> {
     );
   }
 
-  // Future<bool> _onWillPop() async {
-  //   // save before popping
-  //   await _persistSelections();
-  //   return true; // allow the pop
-  // }
-
   Future<void> _loadSavedSelections() async {
     final prefs = await SharedPreferences.getInstance();
 
@@ -1175,17 +1164,6 @@ class _SetupStep3State extends State<SetupStep3> {
   }
 
   Future<void> _finishSetup() async {
-    // if (_guardianEnabled) {
-    //   if (_nameCtrl.text.trim().isEmpty ||
-    //       _phoneCtrl.text.trim().isEmpty ||
-    //       _passcodeCtrl.text.trim().isEmpty) {
-    //     ScaffoldMessenger.of(context).showSnackBar(
-    //       const SnackBar(content: Text('Please enter all the fields.')),
-    //     );
-    //     return;
-    //   }
-    // }
-
     _persistStep3Prefs();
 
     // mark setup done and go home

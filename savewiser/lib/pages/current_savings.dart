@@ -87,7 +87,7 @@ class _CurrentSavingsPageState extends State<CurrentSavingsPage> {
     await prefs.setDouble(
       'savingsBaseline',
       currentSavings,
-    ); // 👈 Save as baseline
+    );
     await prefs.remove('amount');
     await prefs.remove('goalDate');
     await prefs.remove('purpose');
